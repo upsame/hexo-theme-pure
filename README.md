@@ -44,6 +44,7 @@ cd themes/pure
 git pull
 ```
 ## Install plugin
+Execute the following command under your `hexo` folder(not under themes/pure).
 
 ### [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
