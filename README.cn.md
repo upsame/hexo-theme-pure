@@ -56,6 +56,7 @@ hexo s
 ```
 
 ## 安装插件
+命令行切换到`站点根目录`下执行以下命令完成插件安装（不是在主题theme/pure目录下）：
 
 ### [hexo-wordcount](https://github.com/willin/hexo-wordcount)
 
@@ -84,15 +85,15 @@ npm install hexo-generator-baidu-sitemap --save
 ```
 ## 主题配置
 
-### 设置语言
+### 设置语言@`站点配置文件`
 
-打开站点配置文件, 将 language 设置成你所需要的语言。建议明确设置你所需要的语言,可选值对应themes\pure\languages目录下语言文件，简体中文配置如下：
+打开`站点配置文件`, 将 language 设置成你所需要的语言。建议明确设置你所需要的语言,可选值对应themes\pure\languages目录下语言文件，简体中文配置如下：
 
 ```
 language: zh-CN
 ```
 
-### 主题颜色
+### 主题颜色@`主题配置文件`
 
 定制了五套颜色，默认白，黑:theme-black，蓝:theme-blue，绿:theme-green，紫:theme-purple
 
@@ -102,7 +103,7 @@ config:
   skin: # 主题颜色 theme-black theme-blue theme-green theme-purple
 ```
 
-### 导航菜单
+### 导航菜单@`主题配置文件`
 
 ```
 # 导航菜单
@@ -129,7 +130,7 @@ menu_icons:
   about: icon-cup-fill
 ```
 
-### 设置个人信息
+### 设置个人信息@`主题配置文件`
 
 ```
 头像在themes\pure\source\images 目录下替换图片即可，捐献的二维码同理。
@@ -137,7 +138,7 @@ menu_icons:
 个人信息大部分都在 主题配置文件 中设置
 ```
 
-### 搜索
+### 搜索@`主题配置文件`
 
 主题内置三种站内搜索方式：insight、swiftype、baidu
 
@@ -149,7 +150,7 @@ search:
   baidu: false # you need to disable other search engines to use Baidu search
 ```
 
-### 分享
+### 分享@`主题配置文件`
 
 支持`weibo,qq,qzone,wechat,tencent,douban,diandian,facebook,twitter,google,linkedin`
 
@@ -162,7 +163,7 @@ share:
   mobile_sites: weibo,qq,qzone  # 移动端显示的分享图标
 ```
 
-### 评论
+### 评论@`主题配置文件`
 
 主题集成了[disqus](https://disqus.com/)、[友言](http://www.uyan.cc/)、[来必力](https://livere.com/)、[gitment](https://github.com/imsun/gitment)、[gitalk](https://github.com/gitalk/gitalk)评论系统，选择其中一种即可
 
@@ -185,7 +186,7 @@ comment:
     lazy: false
 ```
 
-### 文章浏览量统计
+### 文章浏览量统计@`主题配置文件`
 
 主题内置了不蒜子和leancloud来统计文章浏览量，启用其中之一即可，注意leancloud需要到其官网申请APP ID 和APP Key。
 
@@ -199,7 +200,7 @@ pv:
 
 如果不需要第三方来统计浏览量，只需将相应设置改为false即可（设置为false后不会加载第三方JS脚本）
 
-### Github respostory
+### Github respostory@`主题配置文件`
 
 复制`theme/pure/_source/` 目录下`repository`文件夹到`blog path/source/` 目录下
 
@@ -209,7 +210,7 @@ github:
   username: ***  # github username
 ```
 
-### 豆瓣书单
+### 豆瓣书单@`主题配置文件`
 
 复制`theme/pure/_source/` 目录下`books`文件夹到`blog path/source/` 目录下
 
@@ -221,7 +222,7 @@ douban:
   count: 100 # 获取豆瓣书单数据条数
 ```
 
-### 友情链接
+### 友情链接@`主题配置文件`
 
 复制`theme/pure/_source/` 目录下`links`文件夹到`blog path/source/` 目录下
 
@@ -351,7 +352,7 @@ npm i hexo-renderer-markdown-it-plus --save
 
 ### 配置
 
-安装插件后，如果未正常渲染LaTeX数学公式，在博客配置文件`_config.yml`中添加
+安装插件后，通常已经可以渲染LaTeX数学公式了；如果未正常渲染LaTeX数学公式，在博客配置文件`_config.yml`中添加
 
 ```
 markdown_it_plus:
